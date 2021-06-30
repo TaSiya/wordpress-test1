@@ -1,5 +1,12 @@
 <?php
 
+function siya_theme_support() {
+    //Add dynamic titles
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'siya_theme_support');
+
 // Importing the scripts dynamically
 
 function siya_register_styles() {
